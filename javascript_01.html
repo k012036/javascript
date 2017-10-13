@@ -2,7 +2,31 @@
 <html>
 <head>
 <script type="text/javascript">
-var byteValue = 100;
+
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+            //
+            // 기존 자바스크립트 코드를 이쪽으로 옮김.
+            //
+	var byteValue = 100;
 var shortValue = 3000;
 var intValue = 100000000;
 var longValue = 9000000000000000;
@@ -34,7 +58,9 @@ console.log(typeof boolValue);
 console.log(typeof stringValue)
 console.log(typeof nullValue)
 console.log(typeof undefinedValue);
-</script>
+        }
+    }
+    </script>
 </head>
 <body>
  <div>
